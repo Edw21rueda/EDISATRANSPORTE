@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">OPERADORES EDISA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="navi">close</string>
+
+    <string name="start">Start</string>
+    <string name="log">Log</string>
+    <string name="reset">Reset</string>
+    <string name="launch_activity">Launch activity</string>
+    <string name="location_unknown">Location unknown</string>
+    <string name="location_updates_label">Location Updates</string>
+
+
+    <string name="ok">OK</string>
+    <string name="request_location_updates">Request location updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+
+    <string name="location_updated">Location Updated: %1$s</string>
+
+    <!-- WELCOME FADES -->
+    <!--Titles-->
+    <string name="first_slide_title">Agenda tu cita con nosotros</string>
+    <string name="second_slide_title">Tu sucursal más cercana en tiempo real</string>
+    <string name="third_slide_title">Elige a tu tomador de preferencia</string>
+    <string name="fourth_slide_title">Información de nuestros servicios</string>
+    <!--Descriptions-->
+    <string name="first_slide_desc">Ahora puedes agendar una cita desde cualquier punto en el que te encuentres con tan solo un click. </string>
+    <string name="second_slide_desc">Localizamos tu sucursal mas cercana a través de tu ubicación en tiempo real o una busqueda a través de la dirección de tu ubicación de preferencia.</string>
+    <string name="third_slide_desc">Contamos con una busqueda personalizada de tomadores con la cual puedes elegir tu tomador de preferencia deacuerdo a su sexo y especialidad que requieras.</string>
+    <string name="fourth_slide_desc">Contamos con nuestra sección de comunicate para cualquier duda o aclaración de cosas.</string>
+    <!--Buttons-->
+    <string name="skip_btn">Siguiente</string>
+    <string name="next_btn">Anterior</string>
+    <string name="let_get_started">Iniciemos</string>
+    <string name="ver_carro_de_compras" />
+    <string name="_0" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_driver_map">Map</string>
+    <string name="permission_denied_explanation">permiso denegado</string>
+    <string name="settings">settings</string>
+    <string name="permission_rationale">permisso</string>
+    <string name="title_activity_viaje_maps">Map</string>
+
+</resources>

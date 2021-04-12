@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".CarritoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#EBEDEF"
+        android:elevation="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/featured_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/raleway"
+                android:text="CARRITO"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="27sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"/>
+
+            <LinearLayout
+                android:id="@+id/featured_background3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Subtotal: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/txtsubtotal"
+                    android:layout_width="138dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/raleway"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/featured_background6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Cargo por servicio: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/raleway"
+                    android:text="$90"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/featured_background5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="138dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Total: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/txttot"
+                    android:layout_width="138dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/raleway"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnubi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/btn_redondeado_white"
+                android:elevation="5dp"
+                android:padding="5dp"
+                android:text="Continuar"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

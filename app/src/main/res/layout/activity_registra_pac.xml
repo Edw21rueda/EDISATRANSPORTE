@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+   android:padding="20dp"
+    tools:context=".viaje.registraPacActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:gravity="center"
+            android:text="¡QUE TENGAS UN BUEN VIAJE!"
+            android:textSize="28dp" />
+    <Button
+        android:id="@+id/request_location_updates_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Iniciar Viaje"
+        android:background="@drawable/btn_redondeado_whiteblack"/>
+
+    <Button
+        android:id="@+id/gasto"
+        android:onClick="gasto"
+        android:layout_marginTop="40dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@drawable/btn_redondeado_whiteblack"
+        android:text="Agregar Gastos"/>
+    <Button
+    android:id="@+id/incidente"
+        android:visibility="invisible"
+
+        android:onClick="incidente"
+        android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:background="@drawable/btn_redondeado_whiteblack"    android:text="Agregar Incidente"/>
+    <Button
+        android:id="@+id/firma"
+        android:onClick="firmarcarta"
+        android:visibility="invisible"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_redondeado_whiteblack"
+        android:text="Firmar Carta Porte"/>
+    <Button
+        android:id="@+id/remove_location_updates_button"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+
+        android:background="@drawable/btn_redondeado_whiteblack"
+        android:layout_height="wrap_content"
+        android:text="Finalizar Viaje"/>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

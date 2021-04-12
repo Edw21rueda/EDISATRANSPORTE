@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".viaje.ViajesDisActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardCornerRadius="6dp"
+                app:cardBackgroundColor="#E5BF3A2E"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/payment_label2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="Informaciòn del viaje"
+                    android:textColor="#FFF"
+                    android:textSize="25sp" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:text="Lugar de Origen:"
+                android:textColor="#454749"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtorigen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="@font/pathway_gothic_one"
+                android:text="Origen"
+                android:textColor="#454749"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:text="Lugar de Destino:"
+                android:textColor="#454749"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdestino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="23dp"
+                android:fontFamily="@font/pathway_gothic_one"
+                android:text="Destino"
+                android:textColor="#454749"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:text="Tipo de Carga:"
+                android:textColor="#454749"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tipoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="57dp"
+                android:fontFamily="@font/pathway_gothic_one"
+                android:text="Tipo"
+                android:textColor="#454749"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="6dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="#E5BF3A2E"
+                app:cardElevation="10dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="Gastos iniciales"
+                        android:layout_gravity="center"
+                        android:textColor="#FFF"
+                        android:textSize="25sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtgastos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/pathway_gothic_one"
+            android:text="GASTOS"
+            android:textColor="#454749"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:text="Total de gastos: "
+                android:textColor="#454749"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txttotalgastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="26dp"
+                android:fontFamily="@font/pathway_gothic_one"
+                android:text="Origen"
+                android:textColor="#454749"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtstatusp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/pathway_gothic_one"
+            android:text="GASTOS"
+            android:textColor="#454749"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imggasto"
+            android:layout_width="346dp"
+            android:layout_height="264dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/txtmonto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/pathway_gothic_one"
+            android:text=""
+            android:textColor="#454749"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

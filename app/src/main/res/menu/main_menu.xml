@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="INICIO"
+            android:icon="@drawable/home"/>
+        <item android:id="@+id/nav_agendar"
+            android:title="INICIAR VIAJE"
+            android:icon="@drawable/operador"/>
+        <item android:id="@+id/nav_viajesp"
+            android:title="MIS PROXIMOS VIAJES"
+            android:icon="@drawable/viaje"/>
+        <item android:id="@+id/nav_viajes"
+            android:title="VIAJES FINALIZADOS"
+            android:icon="@drawable/finalizado"/>
+        <item android:id="@+id/nav_mantenimiento"
+            android:title="MANTENIMIENTO"
+            android:icon="@drawable/mantenimientp"/>
+
+
+    </group>
+        <item android:title="Perfil">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_profile"
+                    android:title="MI PERFIL"
+                    android:icon="@drawable/perfil"/>
+                </group>
+            </menu>
+        </item>
+
+    <item android:title="Comunicate">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item android:id="@+id/nav_redes"
+            android:title="CONTACTO"
+            android:icon="@drawable/redes"/>
+                <item android:id="@+id/nav_exit"
+                    android:title="EXIT"
+                    android:icon="@drawable/exitt"/>
+
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/background_bg"
+    android:orientation="vertical"
+    tools:context=".viaje.AgregarEquipoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:gravity="center"
+        android:text="AGREGA QR DE TU EQUIPO"
+        android:textSize="36dp" />
+    <Button
+        android:id="@+id/remove_location_updates_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Agregar Equipo"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_redondeado_white" />
+    <Button
+        android:id="@+id/inicia"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Continuar"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_redondeado_white"
+        />
+
+
+
+
+</LinearLayout>

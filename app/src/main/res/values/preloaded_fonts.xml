@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/anton</item>
+        <item>@font/archivo_black</item>
+        <item>@font/bubblegum_sans</item>
+        <item>@font/carter_one</item>
+        <item>@font/coming_soon</item>
+        <item>@font/galindo</item>
+        <item>@font/glegoo</item>
+        <item>@font/graduate</item>
+        <item>@font/pathway_gothic_one</item>
+        <item>@font/raleway</item>
+        <item>@font/raleway_black</item>
+        <item>@font/raleway_thin</item>
+        <item>@font/roboto_mono_bold</item>
+        <item>@font/sue_ellen_francisco</item>
+        <item>@font/wellfleet</item>
+    </array>
+</resources>

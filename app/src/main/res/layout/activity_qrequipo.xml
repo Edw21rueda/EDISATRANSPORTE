@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_bg"
+    tools:context=".viaje.QRActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="LECTOR EQUIPO"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/scanner"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/btn_redondeado_white"
+            android:gravity="center"
+            android:onClick="scanQR"
+            android:text="ESCANEAR QR"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>

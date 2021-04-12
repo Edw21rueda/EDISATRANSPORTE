@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MiPerfilActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/idiperfil"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/operadores"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/fulname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OPERADOR"
+                android:layout_gravity="center"
+                android:fontFamily="@font/raleway"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fulname"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFF"
+                android:fontFamily="@font/raleway"
+                android:layout_gravity="center"
+                android:text="Operador EDISA"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:padding="0dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="#E5BF3A2E"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@drawable/viaje" />
+
+                    <TextView
+                        android:id="@+id/payment_label"
+                        android:includeFontPadding="false"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/raleway"
+                        android:layout_width="wrap_content"
+                        android:text="Viajes Realizados"
+                        android:gravity="center"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/payment_desc"
+                        android:includeFontPadding="false"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/raleway"
+                        android:layout_below="@id/payment_label"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Balance"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                app:cardBackgroundColor="#E5BF3A2E"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@drawable/viaje" />
+
+                    <TextView
+                        android:id="@+id/payment_label2"
+                        android:includeFontPadding="false"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="#FFF"
+                        android:text="EN VIAJE"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/payment_desc2"
+                        android:includeFontPadding="false"
+                        android:layout_below="@id/payment_label2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text=""
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="Nombre"
+                android:id="@+id/full_name_profile"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableLeft="@drawable/iconp"
+                    android:id="@+id/txtnombre"
+                    android:focusable="false"
+                    android:drawablePadding="10dp"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="Apellidos"
+                android:id="@+id/apellidos"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableLeft="@drawable/iconp"
+                    android:id="@+id/ap"
+                    android:focusable="false"
+                    android:drawablePadding="10dp"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="Correo"
+                android:id="@+id/correo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableLeft="@drawable/iconp"
+                    android:id="@+id/cor"
+                    android:drawablePadding="10dp"
+                    android:text=""
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="Télefono"
+                android:id="@+id/telefono"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableLeft="@drawable/iconp"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/tel"
+                    android:focusable="false"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

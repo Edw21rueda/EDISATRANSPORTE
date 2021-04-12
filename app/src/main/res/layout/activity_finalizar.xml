@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".FinalizarActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#EBEDEF"
+        android:elevation="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/featured_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/raleway"
+                android:text="CONFIRMA CITA"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="27sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Nombre: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/edtnombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway_thin"
+                    android:text="Edwin"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Apellidos: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txtapt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway_thin"
+                    android:text="Edwin"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Dirección: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txtdir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway_thin"
+                    android:text="Edwinjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Teléfono: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txttel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway_thin"
+                    android:text="Edwin"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Fecha: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txtfecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway_thin"
+                    android:text="Edwin"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Hora: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txthora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway_thin"
+                    android:text="Edwin"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/raleway"
+                android:text="Estudios: "
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lists"
+                android:layout_width="wrap_content"
+                android:layout_height="209dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Cargo por Servicio: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway_thin"
+                    android:text="$90"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Total: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txttotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/raleway_thin"
+                    android:text="Edwin"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/btn_redondeado_white"
+                android:elevation="5dp"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:text="Confirmar"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".FirmaQR.InicioActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EBEDEF"
+        android:elevation="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/featured_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/raleway"
+                android:text="CARTA PORTE"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+
+            <LinearLayout
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/raleway"
+                    android:text="Nombre: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtnombre"
+                    android:layout_width="155dp"
+                    android:inputType="textCapCharacters"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/raleway_thin"
+                    android:hint="Nombre"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/raleway"
+                    android:text="Apellidos: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtapellidos"
+                    android:layout_width="155dp"
+                    android:inputType="textCapCharacters"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/raleway_thin"
+                    android:hint="Apellidos"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/raleway"
+                    android:text="PUESTO: "
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtpuesto"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/raleway_thin"
+                    android:hint="Puesto"
+                    android:inputType="textCapCharacters"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="FIRMA DE RECIBIDO"
+                android:textSize="22sp" />
+
+            <view
+                android:id="@+id/view"
+                class="com.example.edisatransporte.FirmaQR.MyCanvas"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:amPmBackgroundColor="#03A9F4"
+                android:background="@drawable/bore"
+                android:dayOfWeekBackground="#3F51B5"
+                android:gestureColor="#03A9F4"
+                android:progressTint="#2196F3"
+                android:solidColor="#00BCD4"
+                android:thumbTint="#03A9F4"
+                android:tint="#03A9F4"
+                app:layout_constraintEnd_toEndOf="@+id/txtfolio"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:thumbTint="#03A9F4"
+                app:tickMarkTint="#2196F3"
+                app:tint="#03A9F4" />
+
+            <Button
+                android:id="@+id/btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/btn_redondeado_white"
+                android:elevation="5dp"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:text="Confirmar"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,6 @@
+<?versión xml = " 1.0 " codificación = " utf-8 " ?>
+<shape android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sólido="http://schemas.android.com/aapt">
+    <android sólido:color = "@color/colorAccent" />
+</shape >

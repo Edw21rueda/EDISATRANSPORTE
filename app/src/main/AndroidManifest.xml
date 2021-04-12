@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.edisatransporte">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Mainviaje.MainviajeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Index.MenufragActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Servicelocation.MainlocationActivity" />
+        <activity
+            android:name=".BienvenidoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".viaje.QrlActivity"
+            android:parentActivityName=".Index.MenufragActivity" />
+        <activity android:name=".ViajemainActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".viaje.ViajesDisActivity"
+            android:parentActivityName=".viaje.ViajesDListActivity" />
+        <activity android:name=".viaje.AgregarIncidenteActivity" />
+        <activity android:name=".viaje.ImageEquipoActivity" />
+        <activity android:name=".viaje.AgregarEquipoActivity" />
+        <activity android:name=".viaje.QrequipoActivity" />
+        <activity android:name=".viaje.GastosImagenesActivity" />
+
+        <receiver android:name=".viaje.MyLocationService" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".viaje.ViajeMapsActivity"
+            android:label="@string/title_activity_viaje_maps" />
+        <activity
+            android:name=".viaje.ViajesDListActivity"
+            android:parentActivityName=".Index.MenufragActivity" />
+        <activity android:name=".Maps.CustomerMapActivity" />
+        <activity
+            android:name=".Maps.DriverMapActivity"
+            android:label="@string/title_activity_driver_map" />
+        <activity android:name=".FirmaQR.TestActivity" />
+        <activity android:name=".FirmaQR.InicioActivity" android:parentActivityName=".Mainviaje.MainviajeActivity" />
+        <activity
+            android:name=".MiPerfilActivity"
+            android:parentActivityName=".Index.MenufragActivity" />
+        <activity
+            android:name=".viaje.ViajesFinActivity"
+            android:parentActivityName=".viaje.MisViajesActivity" />
+        <activity
+            android:name=".viaje.MisViajesActivity"
+            android:parentActivityName=".Index.MenufragActivity" />
+        <activity android:name=".viaje.GastoActivity" />
+        <activity android:name=".viaje.InfvActivity" />
+        <activity
+            android:name=".viaje.QRActivity"
+            android:parentActivityName=".Index.MenufragActivity" />
+        <activity
+            android:name=".Maps.UbicacionActivity"
+            android:parentActivityName=".IndexActivity" />
+        <activity
+            android:name=".DomiciliosActivity"
+            android:parentActivityName=".IndexActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DireccionesListActivity"
+            android:parentActivityName=".IndexActivity" />
+        <activity android:name=".CustomerMapActivity" />
+        <activity android:name=".ComidaListActivity" />
+        <activity
+            android:name=".FinalizarActivity"
+            android:parentActivityName=".CarritoActivity" />
+        <activity
+            android:name=".CarritoActivity"
+            android:parentActivityName=".ProductosActivity" />
+        <activity
+            android:name=".DetallesActivity"
+            android:parentActivityName=".ProductosActivity" />
+        <activity
+            android:name=".ProductosActivity"
+            android:parentActivityName=".IndexActivity" />
+        <activity
+            android:name=".RedesSocialesActivity"
+            android:parentActivityName=".Index.MenufragActivity" />
+        <activity
+            android:name=".IndexActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".viaje.registraPacActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".MainActivity" />
+
+        <receiver android:name=".Maps.LocationUpdatesBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.location.sample.locationupdatespendingintent.LocationUpdatesBroadcastReceiver.ACTION_PROCESS_UPDATES" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".LocationUpdatesService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location" />
+        <service
+            android:name=".Servicelocation.LocationService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Mainviaje.LocationService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

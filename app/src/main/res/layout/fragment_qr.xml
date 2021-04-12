@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Index.QrFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardBackgroundColor="#E5BF3A2E"
+                    app:cardElevation="10dp">
+                    <TextView
+                        android:id="@+id/payment_label2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="LECTOR CARTA PORTE"
+                        android:layout_gravity="center"
+                        android:textColor="#FFF"
+                        android:textSize="25sp" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/scanner"
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/btn_redondeado_white"
+                android:gravity="center"
+                android:text="ESCANEA QR DE TU CARTA PORTE"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+</FrameLayout>
